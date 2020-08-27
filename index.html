@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZOO</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> -->
+   <style>
+    body{background-color:#fadcac ;}
+    .header {
+        color: #197163;
+        background-color: #fadcac;
+        padding: 20px;
+        text-align: center;
+      }
+      .column {
+  float: left;
+  width: 33.33%;
+  padding: 1cm;
+}
+.bobo{
+    background-image: url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+}
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* Style the footer */
+.footer {
+  
+  padding: 10px;
+  text-align: center;
+}
+    </style>
+    
+</head>
+<body class="bobo">
+    
+<div class="header">
+    <h1>Welcome to the ZOO</h1>
+  </div>
+
+  <!-- navbar -->
+  <nav class="navbar navbar-dark bg-dark">
+    <!-- Navbar content -->
+ 
+
+    <a class="navbar-brand" href="#">ZOO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav" style="background-color: #197163;">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown link
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  
+</nav>
+
+<!-- left site -links -->
+
+  <div class="row">
+    <div class="column" style="width: 15%;">
+        <div class="row">
+            <div class="col-3">
+              <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="home.html" role="tab" aria-controls="v-pills-home" aria-selected="true" target="frm">בית</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="animals.html" role="tab" aria-controls="v-pills-profile" aria-selected="false" target="frm">החיות שלנו</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="new.html" role="tab" aria-controls="v-pills-messages" aria-selected="false" target="frm">מה חדש</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="about.html" role="tab" aria-controls="v-pills-settings" aria-selected="false" target="frm">קצת עלינו</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">תמונות</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="connect.html" role="tab" aria-controls="v-pills-settings" aria-selected="false" target="frm">צור קשר</a>
+                <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="navingation.html" role="tab" aria-controls="v-pills-settings" aria-selected="false"  target="frm">המיקום שלנו</a>
+              </div>
+            </div>
+            <div class="col-9">
+              <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">...</div>
+                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">...</div>
+                <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">...</div>
+                <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+              </div>
+            </div>
+          </div>
+    </div>
+    
+<!-- center column - form -->
+
+    <div class="column" style="width: 70%;">
+        <iframe name="frm" frameborder="0" style="width: 100%; height: 100%;" src="home.html"></iframe>
+        </div>
+    
+<!-- right side -->
+
+    <div class="column"style="width: 15%;">
+      <h2>Column</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas sit amet pretium urna. Vivamus venenatis velit nec neque ultricies, eget elementum magna tristique. Quisque vehicula, risus eget aliquam placerat, purus leo tincidunt eros, eget luctus quam orci in velit. Praesent scelerisque tortor sed accumsan convallis.</p>
+    </div>
+  </div>
+
+  <!-- footer -->
+
+  <div class="footer" style="text-align: center;">
+    <p>Footer</p>
+  </div>
+</body 
+</html>
